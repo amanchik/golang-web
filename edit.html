@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<body>
+<form action="/save/{{.K.ID}}" method="POST">
+    <div><textarea name="body" rows="20" cols="80">{{printf "%s" .Desc}}</textarea></div>
+    <div>
+        <input type="checkbox" id="done" name="done" {{if .Done}} checked {{end}}>
+        <label for="done">Done</label>
+      </div>
+    <div><input type="submit" value="Save"></div>
+</form>
+</body>
+</html>

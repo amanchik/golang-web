@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<body>
+<h4><a href="/edit/0">New</a></h4>
+<table>
+{{range .Tasks}}
+<tr><td>{{.Desc}}</td><td><a href="/edit/{{.K.ID}}">Edit</a></td><td><a href="/delete/{{.K.ID}}">Delete</a></td></tr>
+{{end}}
+</table>
+</body>
+</html>
